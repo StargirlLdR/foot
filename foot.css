@@ -1,0 +1,87 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body
+{
+    background-image: url('go.jpg'); 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+
+.car {
+    margin-top: 60px;
+    width: 300px;
+    height: 500px; 
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+    animation: star 5s linear forwards;
+  }
+  
+  .wheel_1, .wheel_2 {
+    width: 100px;
+    height: 100px;
+    background: #0d1b01;
+    border-radius: 50%; 
+    position: absolute;
+    bottom: -180px; 
+  }
+  
+  .wheel_1 {
+    left: 90px; 
+    margin-top: 100px;
+  }
+  
+  .wheel_2 {
+    right: -30px; 
+    margin-top: 60px;
+  }
+.body_bag2
+{
+    position: absolute;
+    width: 300px;
+	height: 140px;
+	background: red;
+    margin-left: 0px;
+    display: flex;
+    margin-top: 240px;
+}
+.bag
+{
+    width: 100px;
+	height: 110px;
+    background: deepskyblue;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 150px;
+}
+
+.body_bag
+{
+    
+    width: 150px;
+	height: 120px;
+	background: red;
+    margin-left: 50px;
+    display: flex;
+    margin-top: 120px;
+}
+
+
+
+@keyframes star 
+{
+    100%
+    {
+        left: calc(100vw - 350px);
+    }
+
+}
